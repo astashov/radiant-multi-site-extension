@@ -54,8 +54,8 @@ describe Site do
   end
   
   it "should generate dev site url form path" do
-    sites(:mysite).dev_url.should eql("http://preview.mysite.domain.com/")
-    sites(:mysite).dev_url("/about").should eql("http://preview.mysite.domain.com/about")
+    sites(:mysite).dev_url.should eql("http://dev.mysite.domain.com/")
+    sites(:mysite).dev_url("/about").should eql("http://dev.mysite.domain.com/about")
   end
   
   describe "#save" do
