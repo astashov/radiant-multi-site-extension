@@ -1,3 +1,7 @@
+module MultiSite
+  @enable_multisite = true
+end
+
 unless defined? RADIANT_ROOT
   ENV["RAILS_ENV"] = "test"
   case
